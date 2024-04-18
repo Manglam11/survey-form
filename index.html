@@ -3,33 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/cricket_svg.png"
+      type="image/x-icon"
+    />
+
+    <title>Cricket form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Let's conduct a survey of your choice..</p>
+  <body class="center-alignment">
+    <div id="upper-div" class="center-alignment">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let's conduct a survey of your choice..</p>
+    </div>
     <form action="" id="survey-form">
-      <div id="label-input">
-        <label for="" id="name-label"> Name</label>
-        <input type="text" id="name" required placeholder="Enter name" />
+      <div id="div-2">
+        <div id="label-input">
+          <label for="" id="name-label" class="label"> Name</label>
+          <input type="text" id="name" required placeholder="Enter name" />
+        </div>
+        <div id="label-input">
+          <label for="" id="email-label">Email</label>
+          <input type="email" id="email" required placeholder="Enter mail" />
+        </div>
+        <div id="label-input">
+          <label for="" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            required
+            min="1"
+            max="120"
+            placeholder="Enter age"
+          />
+        </div>
       </div>
-
-      <div id="label-input">
-        <label for="" id="email-label"></label>
-        <input type="email" id="email" required placeholder="Enter mail" />
+      <select name="" id="dropdown">
+        <label for="" id="dropdown-label">Choose whatever you want:</label>
+        <option value="" disabled selected>Select an option...</option>
+        <option value="World-cup">World-cup</option>
+        <option value="T20">T20</option>
+        <option value="IPL">IPl</option>
+      </select>
+      <div id="radio-div">
+        <p>Which cricket team is your favorite?</p>
+        <label>
+          <input type="radio" name="favorite-team" value="india" />
+          India
+        </label>
+        <label>
+          <input type="radio" name="favorite-team" value="australia" />
+          Australia
+        </label>
+        <label>
+          <input type="radio" name="favorite-team" value="england" />
+          England
+        </label>
+        <label>
+          <input type="radio" name="favorite-team" value="south-africa" />
+          South Africa
+        </label>
       </div>
-
-      <div id="label-input">
-        <label for="" id="number-label">Age</label>
-        <input
-          type="number"
-          id="number"
-          required
-          min="1"
-          max="120"
-          placeholder="Enter age"
-        />
+      <div id="checkbox-div">
+        <p>Name your favorite cricketer:</p>
+        <label>
+          <input
+            type="checkbox"
+            name="favorite-cricketer"
+            value="virat-kohli"
+          />
+          Virat Kohli
+        </label>
+        <label>
+          <input type="checkbox" name="favorite-cricketer" value="dhoni" />
+          M.S. Dhoni
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="favorite-cricketer"
+            value="rohit-sharma"
+          />
+          Rohit Sharma
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="favorite-cricketer"
+            value="gautam-gambhir"
+          />
+          Gautam Gambhir
+        </label>
       </div>
+      <div id="text-area-div">
+        <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+      </div>
+      <button id="submit" type="submit">Submit</button>
     </form>
   </body>
 </html>

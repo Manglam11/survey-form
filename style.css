@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.center-alignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    /* z-index: 1; */
+
+}
+
+#upper-div {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#title {
+    color: #EEEEEE;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+#description {
+    color: #2fa37c;
+    font-size: 20px;
+}
+
+#survey-form {
+    background-color: #B5C18E;
+    background: rgba(181, 193, 142, 0.55);
+    border-radius: 7px;
+}
+
+#label-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:; */
+    /* width: 70%; */
+    margin: 10px 10px;
+    padding: 10px;
+    gap: 8px;
+}
+
+.label {
+    width: 80%;
+}
