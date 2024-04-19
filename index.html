@@ -39,19 +39,34 @@
           />
         </div>
       </div>
-      <select name="" id="dropdown">
-        <label for="" id="dropdown-label">Choose whatever you want:</label>
-        <option value="" disabled selected>Select an option...</option>
-        <option value="World-cup">World-cup</option>
-        <option value="T20">T20</option>
-        <option value="IPL">IPl</option>
-      </select>
+      <div id="dropdown-div" class="custom-select">
+        <select name="" id="dropdown">
+          <option id="select-selecter" value="0">Select an option...</option>
+          <option value="1">World-cup</option>
+          <option value="2">T20</option>
+          <option value="3">IPl</option>
+          <option value="4">Test Cricket</option>
+          <option value="5">Under 19</option>
+          <option value="6">Tennis Cricket</option>
+          <option value="7">Ranji</option>
+        </select>
+      </div>
+
+      <!-- <div class="dropdown">
+        <button class="dropbtn">Select Your Favorite league</button>
+        <div class="dropdown-content">
+          <p>World-cup</p>
+          <p>T20</p>
+          <p>IPL</p>
+        </div>
+      </div> -->
       <div id="radio-div">
         <p>Which cricket team is your favorite?</p>
-        <label>
+        <!-- <label>
           <input type="radio" name="favorite-team" value="india" />
           India
         </label>
+
         <label>
           <input type="radio" name="favorite-team" value="australia" />
           Australia
@@ -63,6 +78,42 @@
         <label>
           <input type="radio" name="favorite-team" value="south-africa" />
           South Africa
+        </label> -->
+
+        <label class="container"
+          >India
+          <input type="radio" checked="checked" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >S. Africa
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >Australia
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >Newzeland
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >England
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >Afganishtan
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
+        </label>
+        <label class="container"
+          >Pakistan
+          <input type="radio" name="radio" />
+          <span class="checkmark"></span>
         </label>
       </div>
       <div id="checkbox-div">
